@@ -2,6 +2,11 @@ import { Container, Heading, SimpleGrid } from "@chakra-ui/react"
 import Task from "./components/Task"
 import Column from "./components/Column"
 import { ColumnType } from "./utils/enums"
+import Logo from './assets/logo.png'
+
+const logoStyle ={
+    margin: '0 auto'
+}
 
 export default function App()
 {
@@ -15,6 +20,7 @@ export default function App()
         bgClip="text"
         mt={4}
       >
+        <img src={Logo} style={logoStyle} alt="DnD Kanban" title="DnD Kanban" width={100} />
         DnD Kanban
       </Heading>
       <Container maxWidth="container.lg" px={4} py={10}>
